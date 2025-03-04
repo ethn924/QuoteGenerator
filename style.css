@@ -1,0 +1,66 @@
+/* Applique l'image de fond à l'ensemble de la page */
+body {
+    background-image: url('background.jpg');
+    background-size: cover; /* L'image couvre toute la page */
+    background-position: center; /* L'image est centrée */
+    background-attachment: fixed; /* L'image reste fixe lors du défilement */
+    margin: 0; /* Enlève les marges par défaut */
+    padding: 0;
+    height: 100vh; /* La hauteur de la page est 100% de la fenêtre */
+    display: flex; /* Utilise flexbox pour centrer */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+}
+
+/* Style pour le générateur de citations */
+#generate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    text-align: center;
+    z-index: 10; /* S'assure que le contenu est au-dessus de l'image */
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7); /* Fond semi-transparent pour le texte */
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%; /* Ajuste la largeur du bloc */
+    max-width: 500px; /* Limite la largeur du bloc pour le texte */
+}
+
+/* Style pour le bouton */
+#click {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Mise en forme du texte de la citation */
+.citation {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+
+/* Style pour le lien GitHub */
+a {
+    position: fixed; /* Fixe le lien en haut de la page */
+    top: 10px; /* Un petit espace du haut */
+    left: 10px; /* Un petit espace de la gauche */
+    padding: 10px;
+    background-color: #333; /* Fond sombre */
+    color: white; /* Texte en blanc */
+    font-weight: bold; /* Texte en gras */
+    font-size: 1.2em; /* Augmente la taille du texte */
+    text-decoration: none; /* Enlève le soulignement par défaut */
+    border-radius: 5px; /* Bords arrondis */
+}
+
+a:hover {
+    background-color: #555; /* Change la couleur au survol */
+}
+
